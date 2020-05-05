@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--在ios中是否运行时创建快捷启动方式-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--ios设置顶部通知栏的样式 黑色-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--遇到数字不转化为电话号码的格式-->
+    <meta content="telephone=no" name="format-detection">
+    <!--项目描述-->
+    <meta name="description" content="乐淘是中国最大的正品运动鞋、皮鞋网上专卖。乐淘网经营的品牌包括耐克、阿迪达斯、李宁、匡威等国内外知名品牌的篮球鞋,板鞋,休闲鞋,跑步鞋,帆布...">
+    <meta name="Keywords" content="乐淘 乐淘鞋城 买鞋子 上乐淘 运动鞋 篮球鞋 帆布鞋 跑步鞋 男鞋 女鞋 足球鞋 休闲鞋 凉鞋 户外鞋 布洛克 高跟鞋 单鞋 豆豆鞋 乐福鞋 牛津鞋 凉拖 皮鞋 短靴 长靴 登山鞋 徒步鞋 硫化鞋 训练鞋 溯溪鞋 越野鞋 板鞋 足球鞋 网球鞋 赛车鞋 雪地靴 马丁靴 商务 英伦">
+    <title>乐淘-分类</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="res/mui/css/mui.min.css"/>
+    <link rel="stylesheet" href="res/fontAwesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+<!--版心-->
+<div class="lt_container">
+    <!--header-->
+    <header class="lt_header">
+        <!--返回上一个历史记录-->
+        <a href="javascript:history.back();" class="left"><span class="fa fa-arrow-left"></span></a>
+        <h3 class="">form表单</h3>
+        <a href="search.html" class="right"><span class="fa fa-search"></span></a>
+    </header>
+
+    <!--content-->
+    <div class="lt_content">
+        <div class="lt_wrap">
+            <!--区域滚动的结构-->
+            <!--<div class="mui-scroll-wrapper">-->
+                <!--<div class="mui-scroll">-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="cate_left">
+                <ul>
+                    <!--TODO-->
+                    <!--<li class="now"><a href="#">运动馆</a></li>-->
+                    <!--<li><a href="#">儿童馆</a></li>-->
+                    <!--<li><a href="#">马书馆</a></li>-->
+                    <!--<li><a href="#">运动馆</a></li>-->
+                </ul>
+            </div>
+            <div class="cate_right">
+                <ul>
+                    <!--TODO-->
+                    <!--<li><a href="#"><img src="images/brand1.png" alt=""><p>阿迪</p></a></li>-->
+                    <!--<li><a href="#"><img src="images/brand1.png" alt=""><p>阿迪</p></a></li>-->
+                    <!--<li><a href="#"><img src="images/brand1.png" alt=""><p>阿迪</p></a></li>-->
+                    <!--<li><a href="#"><img src="images/brand1.png" alt=""><p>阿迪</p></a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item now" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="user/cart.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user/index.html">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</div>
+
+<!--创建模板-->
+<script type="text/html" id="firstData">
+    {{ each rows }}
+        <li class="{{ $index==0?'now':'' }}"><a data-id="{{ $value.id }}" href="#">{{ $value.categoryName }}</a></li>
+   {{ /each }}
+</script>
+
+<!--二级分类的模板-->
+<script type="text/html" id="secondData">
+    {{ if rows.length }}
+        {{ each rows }}
+            <li><a href="#"><img src="{{ $value.brandLogo }}" alt=""><p>{{ $value.brandName }}</p></a></li>
+        {{ /each }}
+
+    {{ else }}
+    <p>当前没有数据</p>
+
+    {{ /if }}
+
+</script>
+
+
+<script src="res/mui/js/mui.js"></script>
+<script src="res/zepto/zepto.min.js"></script>
+<!--<script src="../node_modulesart-template\lib"></script>-->
+<!--模板引擎的简介语法的包-->
+<script src="res/artTemplate/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--在ios中是否运行时创建快捷启动方式-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--ios设置顶部通知栏的样式 黑色-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--遇到数字不转化为电话号码的格式-->
+    <meta content="telephone=no" name="format-detection">
+    <!--项目描述-->
+    <meta name="description" content="乐淘是中国最大的正品运动鞋、皮鞋网上专卖。乐淘网经营的品牌包括耐克、阿迪达斯、李宁、匡威等国内外知名品牌的篮球鞋,板鞋,休闲鞋,跑步鞋,帆布...">
+    <meta name="Keywords"
+          content="乐淘 乐淘鞋城 买鞋子 上乐淘 运动鞋 篮球鞋 帆布鞋 跑步鞋 男鞋 女鞋 足球鞋 休闲鞋 凉鞋 户外鞋 布洛克 高跟鞋 单鞋 豆豆鞋 乐福鞋 牛津鞋 凉拖 皮鞋 短靴 长靴 登山鞋 徒步鞋 硫化鞋 训练鞋 溯溪鞋 越野鞋 板鞋 足球鞋 网球鞋 赛车鞋 雪地靴 马丁靴 商务 英伦">
+    <title>乐淘-购物车</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../res/mui/css/mui.min.css"/>
+    <link rel="stylesheet" href="../res/fontAwesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+<!--版心-->
+<div class="lt_container">
+    <!--header-->
+    <header class="lt_header">
+        <a href="javascript:history.back();" class="left"><span class="fa fa-arrow-left"></span></a>
+        <h3 class="mui-ellipsis-2">购物车</h3>
+        <a href="javascript:;" class="right"><span class="fa fa-refresh"></span></a>
+
+    </header>
+      <input type="checkbox">
+
+    <!--content-->
+    <div class="lt_content">
+        <div class="lt_wrap">
+            <!--区域滚动的结构-->
+            <div id="refreshContainer" class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--滑动结构-->
+                    <ul id="OA_task_2" class="mui-table-view">
+                        <!--TODO-->
+                        <!--<li data-product class="mui-table-view-cell mui-transitioning">-->
+                            <!--&lt;!&ndash;操作容器&ndash;&gt;-->
+                            <!--<div class="mui-slider-right mui-disabled">-->
+
+                                <!--<a class="mui-btn mui-btn-blue"-->
+                                   <!--style="transform: translate(-90px, 0px);">编辑</a>-->
+                                <!--<a class="mui-btn mui-btn-red"-->
+                                   <!--style="transform: translate(-180px, 0px);">删除</a>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;内容容器&ndash;&gt;-->
+                            <!--&lt;!&ndash;图文列表结构&ndash;&gt;-->
+                            <!--<a class="mui-navigate-right mui-slider-handle" style="transform: translate(0px, 0px);">-->
+                                <!--<img class="mui-media-object mui-pull-left" src="../images/cbd.jpg">-->
+                                <!--<div class="mui-media-body">-->
+                                    <!--<p class="name">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>-->
+                                    <!--<p class="info">-->
+                                        <!--<span class="price">¥499.1</span>-->
+                                        <!--<span class="oldPrice">¥888.1</span>-->
+                                        <!--<span class="number">x1双</span>-->
+                                    <!--</p>-->
+                                    <!--<p><span class="size">鞋码：40</span></p>-->
+                                <!--</div>-->
+                                <!--<input type="checkbox">-->
+                            <!--</a>-->
+
+                        <!--</li>-->
+
+                    </ul>
+
+
+                    <!--content-->
+                    <!--<ul id="OA_task_2" class="mui-table-view">-->
+                    <!--<li data-product class="mui-table-view-cell">-->
+                    <!--<div class="mui-slider-right mui-disabled">-->
+
+                    <!--<a class="mui-btn mui-btn-blue">编辑</a>-->
+                    <!--<a class="mui-btn mui-btn-red ">删除</a>-->
+                    <!--</div>-->
+                    <!--<div class="mui-slider-handle">-->
+                    <!--<div class="mui-table-cell">-->
+
+                    <!--<a href="javascript:;" class="mui-navigate-right mui-slider-handle">-->
+
+                    <!--<img class="mui-media-object mui-pull-left" src="/mobile/images/product.jpg">-->
+                    <!--<div class="mui-media-body">-->
+                    <!--<p class="name">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>-->
+                    <!--<p class="info">-->
+                    <!--<span class="price">¥499.1</span>-->
+                    <!--<span class="oldPrice">¥888.1</span>-->
+                    <!--<span class="number">x1双</span>-->
+                    <!--</p>-->
+                    <!--<p><span class="size">鞋码：40</span></p>-->
+                    <!--</div>-->
+
+                    <!--<input data-id="10" type="checkbox">-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="cart_order">订单总额：¥<span id="cartAmount">0.00</span> <a href="javascript:;">生成订单</a></div>
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="../index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="../category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item  now" href="cart.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="./index.html">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</div>
+
+
+<script id="cart" type="text/html">
+   {{ each  data }}
+
+   <li data-product class="mui-table-view-cell mui-transitioning">
+       <!--操作容器-->
+       <div class="mui-slider-right mui-disabled">
+           <a class="mui-btn mui-btn-blue"
+              data-id="{{ $value.id }}"
+              data-size="{{ $value.size }}"
+              data-num="{{ $value.num }}"
+              data-productSize="{{ $value.productSize }}"
+              data-productNum="{{ $value.productNum }}"
+              style="transform: translate(-90px, 0px);">编辑</a>
+           <a class="mui-btn mui-btn-red" data-id="{{ $value.id }}"
+              style="transform: translate(-180px, 0px);">删除</a>
+       </div>
+       <!--内容容器-->
+       <!--图文列表结构-->
+       <a class="mui-navigate-right mui-slider-handle" style="transform: translate(0px, 0px);">
+           <img class="mui-media-object mui-pull-left" src="{{ $value.pic[0].picAddr }}">
+           <div class="mui-media-body">
+               <p class="name">{{ $value.proName }}</p>
+               <p class="info">
+                   <span class="price">{{ $value.price }}</span>
+                   <span class="oldPrice">{{ $value.oldPrice }}</span>
+                   <span class="number">{{ $value.num }}双</span>
+               </p>
+               <p><span class="size">鞋码：{{ $value.size }}</span></p>
+           </div>
+           <input type="checkbox" data-num="{{$value.num}}" data-price="{{ $value.price }}">
+       </a>
+
+   </li>
+    {{ /each }}
+
+
+
+</script>
+
+<!--创建编辑弹框的模板内容-->
+<script id="edit" type="text/html">
+
+    <div class="p_size">
+        尺码：
+        <%
+            var arr = productsize.split("-");
+            var start = arr[0], end = arr[1];
+        for( var i = start; i <= end ; i++){
+        %>
+        <span class="btn_size <%=i==size?'now':''%>"><%=i%></span>
+        <% } %>
+
+
+    </div>
+    <div class="p_number">
+        数量：
+        <span class="jian">-</span><input readonly="" type="text" value="<%=num%>" data-max="<%=productnum%>"><span class="jia">+</span>
+        剩余：<%=productnum%> 件
+    </div>
+</script>
+
+
+<script src="../res/mui/js/mui.js"></script>
+<script src="../res/zepto/zepto.min.js"></script>
+<script src="../res/zepto/selector.js"></script>
+<!--这个js文件既能使用原生语法, 又能使用简洁语法-->
+<script src="../res/artTemplate/template-web.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user/cart.js"></script>
+</body>
+</html>

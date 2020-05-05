@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--在ios中是否运行时创建快捷启动方式-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--ios设置顶部通知栏的样式 黑色-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--遇到数字不转化为电话号码的格式-->
+    <meta content="telephone=no" name="format-detection">
+    <!--项目描述-->
+    <meta name="description" content="乐淘是中国最大的正品运动鞋、皮鞋网上专卖。乐淘网经营的品牌包括耐克、阿迪达斯、李宁、匡威等国内外知名品牌的篮球鞋,板鞋,休闲鞋,跑步鞋,帆布...">
+    <meta name="Keywords" content="乐淘 乐淘鞋城 买鞋子 上乐淘 运动鞋 篮球鞋 帆布鞋 跑步鞋 男鞋 女鞋 足球鞋 休闲鞋 凉鞋 户外鞋 布洛克 高跟鞋 单鞋 豆豆鞋 乐福鞋 牛津鞋 凉拖 皮鞋 短靴 长靴 登山鞋 徒步鞋 硫化鞋 训练鞋 溯溪鞋 越野鞋 板鞋 足球鞋 网球鞋 赛车鞋 雪地靴 马丁靴 商务 英伦">
+    <title>乐淘-注册</title>
+    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../res/mui/css/mui.min.css"/>
+    <link rel="stylesheet" href="../res/fontAwesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/user.css">
+
+</head>
+<body>
+<!--版心-->
+<div class="lt_container">
+    <!--header-->
+    <header class="lt_header">
+        <a href="javascript:history.back();" class="left"><span class="fa fa-arrow-left"></span></a>
+        <h3 class="">注册</h3>
+    </header>
+
+    <!--content-->
+    <div class="lt_content">
+        <div class="lt_wrap">
+            <!--区域滚动的结构-->
+            <div id="refreshContainer" class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="form_box" style="padding: 10px;">
+                        <div class="mui-input-row">
+                            <input name="username" type="text" placeholder="用户名">
+                        </div>
+                        <div class="mui-input-row">
+                            <input name="mobile" type="text" placeholder="手机号">
+                        </div>
+                        <div class="mui-input-row">
+                            <input name="password" type="password" placeholder="密码" class="mui-input-password" data-input-password="2">
+                            <span class="mui-icon mui-icon-eye"></span>
+                        </div>
+                        <div class="mui-input-row" >
+                            <input name="rePass" type="password" placeholder="确认密码" class="mui-input-password" data-input-password="3">
+                            <span class="mui-icon mui-icon-eye"></span>
+                        </div>
+                        <div class="mui-input-row">
+                            <input  style="width: 60%; float:left;" name="vCode" type="text" placeholder="认证码">
+                            <a href="javascript:;" class="btn_getCode mui-btn mui-btn-primary">获取认证码</a>
+                        </div>
+                        <a href="javascript:;" class="mui-btn mui-btn-primary btn_register">注册</a>
+                        <div class="mui-input-row cz_text">
+                            <input type="checkbox" checked=""> 我同意《会员服务协议》
+                            <a style="font-size: 12px; float:right;" href="login.html">立即登录</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="../index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item now" href="../category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="./index.html">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</div>
+
+
+
+
+
+<script src="../res/mui/js/mui.js"></script>
+<script src="../res/zepto/zepto.min.js"></script>
+<script src="../res/zepto/selector.js"></script>
+<script src="../res/artTemplate/template-native.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: #fff;
+    /*注 : 使纵轴滑动更流畅, 解决谷歌滑动报错*/
+    touch-action: pan-y;
+}
+/*版心容器*/
+.lt_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*头部*/
+.lt_container .lt_header{
+    width: 100%;
+    height: 45px;
+    background-color: #006699;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 45px;
+    color: #fff;
+}
+.lt_container .lt_header h3{
+    text-align: center;
+    font-size: 16px;
+    line-height: 45px;
+    margin: 0;
+    font-weight: 400;
+}
+.lt_container .lt_header a{
+    position: absolute;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+}
+.lt_container .lt_header a.right{
+    right: 0;
+}
+.lt_container .lt_header a.left{
+    left: 0;
+}
+
+.lt_container .mui-bar{
+    box-shadow: none;
+    background-color: #006699;
+}
+.lt_container .mui-bar a{
+    color: #fff;
+
+}
+
+/*内容*/
+.lt_container .lt_content{
+    width: 100%;
+    height: 100%;
+    padding: 45px 0 50px 0;
+
+}
+.lt_container .lt_content .lt_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+.mui-bar-tab .mui-tab-item.now{
+    color: darkorange;
+}
+
+
+
+
